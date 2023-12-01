@@ -8,7 +8,7 @@
 def tax(subtotal: float, total: float) -> float:
     # Checking if the subtotal or total is negative
     if subtotal < 0 or total < 0:
-        raise ValueError("Error: .")
+        raise ValueError("Error: you inputted a negative number .")
 
     # Calculating the tax percentage
     tax_percentage = ((total - subtotal) / subtotal) * 100
